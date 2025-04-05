@@ -12,8 +12,7 @@ class Animal:
         self.name = name
         self.hidden = hidden
         self.health = health
-        if self.health > 0:
-            Animal.alive.append(self)
+        Animal.alive.append(self)
 
     def die(self) -> None:
         if self in Animal.alive:
